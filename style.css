@@ -3,7 +3,7 @@
 html, body {
     height: 100%;
     margin: 0;
-    background-color: #5E876E;
+    padding: 0;
     font-family: 'Inter', sans-serif;
 }
 
@@ -117,7 +117,7 @@ h1 {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    max-width: 960px;
+    max-width: 500px;
     gap: 20px;
 }
 
@@ -136,6 +136,8 @@ h1 {
     font-size: 18px;     
     border-radius: 12px;
     cursor: pointer;
+    width: 100%;
+    max-width: 200px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -146,4 +148,49 @@ h1 {
 
 .big-button:active {
     background-color: #3e8e41;
+}
+
+
+@media (max-width: 768px) {
+    .card-row {
+        flex-direction: column;
+        gap: 10px; 
+    }
+
+    .button-row {
+        flex-direction: column; 
+        gap: 10px; 
+        align-items: center;
+    }
+
+    .big-button {
+        padding: 15px 20px; 
+        font-size: 16px; 
+    }
+
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .color-display {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .big-button {
+        padding: 10px 15px; 
+        font-size: 14px; 
+        max-width: 100%;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
 }
