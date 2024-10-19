@@ -14,23 +14,23 @@
     <hr>
 
     <div class="content-container">
-        <div class="card" id="card-body">
-            <button class="button1" onclick="changeBodyBackground()">Change Body Background</button>
-            <div id="body-color-display" class="color-display">Body Background Color #FFFFFF</div>
-        </div>
-
+        <!-- Card 1: Changes Body and Card 1 Background -->
         <div class="card" id="card1">
-            <button class="button1" onclick="changeBackground('card1', 'color-display-1')">Button 1: Change Card 1 Background</button>
-            <div id="color-display-1" class="color-display">Card Color #FFFFFF</div>
+            <input type="text" id="bodyColorInput" placeholder="Enter a color (e.g., #FF5733)">
+            <button class="button1" onclick="changeBodyBackground()">Change Card 1</button>
+            <div id="color-display-1" class="color-display">Card 1  Color #FFFFFF</div>
         </div>
 
+        <!-- Card 2 and 3 in a row -->
         <div class="card-row">
             <div class="card" id="card2">
-                <button class="button2" onclick="changeBackground('card2', 'color-display-2')">Change Card 2!</button>
+                <input type="text" id="cardColorInput2" placeholder="Enter a color (e.g., #FF5733)">
+                <button class="button2" onclick="changeBackground('card2', 'color-display-2', 'cardColorInput2')">Change Card 2!</button>
                 <div id="color-display-2" class="color-display">Card Color #FFFFFF</div>
             </div>
             <div class="card" id="card3">
-                <button class="button1" onclick="changeBackground('card3', 'color-display-3')">Change Card 3!</button>
+                <input type="text" id="cardColorInput3" placeholder="Enter a color (e.g., #FF5733)">
+                <button class="button1" onclick="changeBackground('card3', 'color-display-3', 'cardColorInput3')">Change Card 3!</button>
                 <div id="color-display-3" class="color-display">Card Color #FFFFFF</div>
             </div>
         </div>
@@ -42,7 +42,6 @@
         <button id="bigButton3" class="big-button" onclick="changeButtonColor('bigButton3')">Change me!!</button>
         <button id="bigButton4" class="big-button" onclick="changeButtonColor('bigButton4')">Change me!!</button>
     </div>
-</div>
 
     <script src="script.js"></script>
 </body>
