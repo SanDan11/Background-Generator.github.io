@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="h1">See what fits your needs</h1>
+    <hr>
+
+    <div class="content-container">
+        <div class="card" id="card-body">
+            <button class="button1" onclick="changeBodyBackground()">Change Body Background</button>
+            <div id="body-color-display" class="color-display">Body Background Color #FFFFFF</div>
+        </div>
+
+        <div class="card" id="card1">
+            <button class="button1" onclick="changeBackground('card1', 'color-display-1')">Button 1: Change Card 1 Background</button>
+            <div id="color-display-1" class="color-display">Card Color #FFFFFF</div>
+        </div>
+
+        <div class="card-row">
+            <div class="card" id="card2">
+                <button class="button2" onclick="changeBackground('card2', 'color-display-2')">Change Card 2!</button>
+                <div id="color-display-2" class="color-display">Card Color #FFFFFF</div>
+            </div>
+            <div class="card" id="card3">
+                <button class="button1" onclick="changeBackground('card3', 'color-display-3')">Change Card 3!</button>
+                <div id="color-display-3" class="color-display">Card Color #FFFFFF</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-row">
+        <button id="bigButton1" class="big-button" onclick="changeButtonColor('bigButton1')">Change me!!</button>
+        <button id="bigButton2" class="big-button" onclick="changeButtonColor('bigButton2')">Change me!!</button>
+        <button id="bigButton3" class="big-button" onclick="changeButtonColor('bigButton3')">Change me!!</button>
+        <button id="bigButton4" class="big-button" onclick="changeButtonColor('bigButton4')">Change me!!</button>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
